@@ -4,26 +4,23 @@
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
   <title>What Color Is It?</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
   <body>
     <h1 id="#time">12:00:00</h1>
     <h2 id="#hex">#12:00:00</h2>
-	<script>
-		(function updateTime()
- {
-    var date = new Date();
-    var ts = date.toLocaleTimeString('en-GB');
-    var hex = "#" + ts.replace(/:/g, '');
-    
-    document.getElementById("#time").innerHTML="<h1>" + ts + "</h1>";
-    document.getElementById("#hex").innerHTML="<h2>" + hex + "</h2>";
+    <script src="./js/index.js"></script>
 
-    document.body.style.backgroundColor = hex;
-    setTimeout(arguments.callee, 1000);
-})();
-	  </script>
+    <div class="choices"> 
+      <input type="radio" name="choice" id="choice_1" value="small" checked />
+      <label for="choice_1">12hr</label>
+        
+      <input type="radio" name="choice" id="choice_2" value="small" />
+      <label for="choice_2">24hr</label>
+
+      <input type="radio" name="choice" id="choice_3" value="small" />
+      <label for="choice_3">Hex</label>
+    </div>
   </body>
 </html>
