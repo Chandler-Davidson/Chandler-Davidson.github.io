@@ -10,14 +10,12 @@ body {
 
 h1 {
 	font-weight: 300;
-	font-choice: calc(7vw + 7vh);
-	/*font-choice: calc(7vw + 3.5vh);*/
+	font-size: calc(6vw + 6vh);
 }
 
 h2 {
-	font-weight: 700;
-	font-choice: calc(3.5vw + 3.5vh);
-	/*font-choice: calc(3.5vw + 1.75vh);*/
+	font-weight: 500;
+	font-size: calc(3.5vw + 3.5vh);
 
 }
 
